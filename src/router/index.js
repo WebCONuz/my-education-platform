@@ -23,7 +23,15 @@ const router = createRouter({
       children: [
         {
           path: "main",
-          component: () => import("../views/adminViews/MainView.vue"),
+          component: () => import("../views/adminViews/DashboardView.vue"),
+        },
+        {
+          path: "users",
+          component: () => import("../views/adminViews/AllUsersView.vue"),
+        },
+        {
+          path: "settings",
+          component: () => import("../views/adminViews/SettingsView.vue"),
         },
       ],
     },

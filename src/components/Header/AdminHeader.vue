@@ -4,7 +4,7 @@
   >
     <router-link to="/admin/main" class="flex items-center">
       <img
-        src="../../assets/images/logo-removebg-preview.png"
+        src="../../assets/images/header/logo-removebg-preview.png"
         alt="logo"
         class="w-[50px]"
       />
@@ -26,11 +26,11 @@
       <li
         class="w-10 h-10 flex items-center justify-center rounded-lg bg-green-100 mx-3"
       >
-        <img src="../../assets/images/ru.png" alt="ru" />
+        <img src="../../assets/images/header/ru.png" alt="ru" />
       </li>
       <li class="flex items-end">
         <img
-          src="../../assets/images/admin.webp"
+          src="../../assets/images/header/admin.webp"
           alt="admin image"
           class="w-10"
         />
