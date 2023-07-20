@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="h-[70px] flex items-center justify-between px-8 bg-green-50 border-b border-gray-200 sticky top-0 left-0"
+    class="h-[70px] flex items-center justify-between px-8 bg-white border-b border-gray-200 sticky top-0 left-0"
   >
     <router-link to="/admin/main" class="flex items-center">
       <img
