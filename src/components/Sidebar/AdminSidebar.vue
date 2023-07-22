@@ -40,7 +40,7 @@ const menu = [
     ]
   },
   {
-    icon: 'bx bx-nodepat',
+    icon: 'bx bx-notepad',
     title: 'Blog', 
     list: [
       {name: 'Blog List', url: '/admin/blog'},
@@ -76,10 +76,7 @@ const menu = [
 <template>
   <aside class="admin-sidebar h-screen sticky top-0 left-0 overflow-y-auto border-r border-gray-200 bg-[#2A3042] py-4">
     <div>
-      <Accordion />
-      <Accordion />
-      <Accordion />
-      <Accordion />
+      <Accordion v-for="item in menu" :data="item" />
       <!-- <router-link
         to="/admin/main"
         class="py-3 px-4 rounded-lg text-gray-700 bg-[#f8f8f8] hover:bg-[#EAEAEA] mb-2 flex items-center duration-200"
