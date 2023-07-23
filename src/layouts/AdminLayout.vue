@@ -8,7 +8,7 @@ import AdminHeader from "../components/Header/AdminHeader.vue";
     <AdminSidebar class="w-1/5" />
     <main class="user-main w-4/5 overflow-x-hidden overflow-y-auto">
       <AdminHeader />
-      <div class="p-4">
+      <div class="px-4 pb-4 pt-[86px]">
         <router-view></router-view>
       </div>
     </main>

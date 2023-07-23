@@ -1,42 +1,107 @@
 <template>
   <nav
-    class="h-[70px] flex items-center justify-between px-8 bg-white border-b border-gray-200 sticky top-0 left-0"
+    class="h-[70px] flex items-center justify-between px-4 bg-white w-4/5 fixed top-0 left-1/5 z-40 shadow-sm"
   >
-    <router-link to="/admin/main" class="flex items-center">
-      <img
-        src="../../assets/images/header/logo-removebg-preview.png"
-        alt="logo"
-        class="w-[50px]"
-      />
-      <h2 class="text-xl text-[#0FB13A] ml-2 font-bold uppercase">The Future</h2>
-    </router-link>
-
-    <ul class="flex items-center">
-      <!-- <li>
-        <input
-          type="text"
-          class="h-10 w-[300px] border outline-none focus:outline-none px-3 text-gray-700 rounded-lg border-green-200 mr-3"
+    <!-- search -->
+    <label for="seach-input" class="relative">
+      <i class='bx bx-search-alt absolute left-[15px] top-1/2 -translate-y-1/2 text-lg text-[#767A8EE0]'></i>
+      <input
+        id="seach-input"
+        type="text"
+        class="h-10 w-[250px] bg-[#F2F2F8] border-0 placeholder:text-[#767a8ee0] placeholder:font-normal text-sm focus:border-none focus:outline-none focus:ring-0 pl-[40px] pr-3 text-[#767A8E] rounded-[35px]"
+        placeholder="Search..."
         />
-      </li> -->
+    </label>
+
+    <!-- menu -->
+    <ul class="flex items-center">
       <li
-        class="w-10 h-10 flex items-center justify-center rounded-lg bg-green-100"
-      >
-        <i class="bx bxs-moon text-xl text-green-600"></i>
-      </li>
-      <li
-        class="w-10 h-10 flex items-center justify-center rounded-lg bg-green-100 mx-3"
+        class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#F2F2F8] mr-4"
       >
         <img src="../../assets/images/header/ru.png" alt="ru" />
       </li>
-      <li class="flex items-end">
+      <li
+        class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#F2F2F8] mr-4"
+      >
+        <i class="bx bxs-moon text-xl text-gray-600"></i>
+      </li>
+      <li
+        class="w-9 h-9 flex items-center justify-center rounded-lg relative bg-[#F2F2F8] mr-4"
+      >
+        <i class='bx bx-bell text-xl text-gray-600'></i>
+        <div class="absolute -right-2 -top-2 w-[18px] h-[18px] text-[10px] text-white bg-[#F46A6A] rounded-full flex items-center justify-center">3</div>
+      </li>
+      <li class="profile flex items-center relative text-[#767A8E] cursor-pointer">
         <img
           src="../../assets/images/header/admin.webp"
           alt="admin image"
-          class="w-10"
+          class="w-9"
         />
+        <p class="ml-3 text-sm mr-1 leading-4">Neo <br> Martin</p>
+        <i class='bx bx-chevron-down text-lg duration-500' />
+        <div class="sub-menu absolute right-0 w-[155px] bg-white py-1 rounded-md duration-300">
+          <router-link to="/admin/profile" class="flex items-center w-full px-4 text-[#212529] py-2 hover:bg-[#F8F9FA] duration-200">
+            <i class='bx bx-user mr-2' ></i>
+            <span class="text-sm">Profile</span>
+          </router-link>
+          <router-link to="/admin/profile" class="flex items-center w-full px-4 text-[#212529] py-2 hover:bg-[#F8F9FA] duration-200">
+            <i class='bx bx-wallet mr-2' ></i>
+            <span class="text-sm">My Wallet</span>
+          </router-link>
+          <router-link to="/admin/profile" class="flex items-center w-full px-4 text-[#212529] py-2 hover:bg-[#F8F9FA] duration-200">
+            <i class='bx bx-wrench mr-2' ></i>
+            <span class="text-sm">Setting</span>
+          </router-link>
+          <router-link to="/admin/profile" class="flex items-center w-full px-4 text-[#212529] py-2 hover:bg-[#F8F9FA] duration-200">
+            <i class='bx bx-lock-open mr-2' ></i>
+            <span class="text-sm">Lock Screen</span>
+          </router-link>
+          <router-link to="/admin/profile" class="flex items-center w-full px-4 text-[#F46A6A] py-3 border-t border-gray-100 mt-1 hover:bg-[#F8F9FA] duration-200">
+            <i class='bx bx-power-off mr-2'></i>
+            <span class="text-sm">Logout</span>
+          </router-link>
+        </div>
       </li>
     </ul>
   </nav>
 </template>
 
-<style></style>
+<style>
+@keyframes shakeBell {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-15deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(15deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.bx-bell{
+  animation-name: shakeBell;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timeline: 2s;
+}
+
+.profile:hover .sub-menu{
+  opacity: 1;
+  visibility: visible;
+  top: 44px;
+}
+.sub-menu{
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  visibility: hidden;
+  top: 54px;
+}
+</style>
