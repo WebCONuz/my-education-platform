@@ -37,7 +37,10 @@
           alt="admin image"
           class="w-9"
         />
-        <p class="ml-3 text-sm mr-1 leading-4">Neo <br> Martin</p>
+        <div class="ml-3 mr-1">
+          <p class="text-sm font-bold">Neo Martines</p>
+          <p class="text-end text-xs">Super admin</p>
+        </div>
         <i class='bx bx-chevron-down text-lg duration-500' />
         <div class="sub-menu absolute right-0 w-[155px] bg-white py-1 rounded-md duration-300">
           <router-link to="/admin/profile" class="flex items-center w-full px-4 text-[#212529] py-2 hover:bg-[#F8F9FA] duration-200">
@@ -99,7 +102,7 @@
   top: 44px;
 }
 .sub-menu{
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   opacity: 0;
   visibility: hidden;
   top: 54px;

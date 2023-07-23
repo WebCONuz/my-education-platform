@@ -1,13 +1,10 @@
+<script setup>
+import Breadcrumb from '../../components/ui/Breadcrumb.vue';
+</script>
+
 <template>
   <div>
-    <h1 class="text-3xl text-center font-semibold text-red-600 pb-4">
-      Main Admin view
-    </h1>
-    <ul>
-      <li>statistics</li>
-      <li>charts</li>
-      <li>all users</li>
-    </ul>
+    <Breadcrumb title="Dashboard" :data="['Dashboard', 'Main']" />
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <script setup>
 import UsersTable from '../../components/Table/UsersTable.vue';
+import Breadcrumb from '../../components/ui/Breadcrumb.vue';
 
 const users = [
   {
@@ -70,7 +71,7 @@ const admins = [
       <li>All users Table</li>
       <li>pagination</li>
     </ul> -->
-
+    <Breadcrumb title="Dashboard" :data="['Dashboard', 'Contact', 'Users']" />
     <UsersTable :admins="admins" :users="users" />
   </div>
 </template>
