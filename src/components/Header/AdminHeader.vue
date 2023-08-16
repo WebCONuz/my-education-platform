@@ -18,7 +18,7 @@
       <li
         class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#F2F2F8] mr-4"
       >
-        <img src="../../assets/images/header/ru.png" alt="ru" />
+        <img src="/images/header/ru.png" alt="ru" />
       </li>
       <li
         class="w-9 h-9 flex items-center justify-center rounded-lg bg-[#F2F2F8] mr-4"
@@ -33,7 +33,7 @@
       </li>
       <li class="profile flex items-center relative text-[#767A8E] cursor-pointer">
         <img
-          src="../../assets/images/header/admin.webp"
+          src="/images/header/admin.webp"
           alt="admin image"
           class="w-9"
         />

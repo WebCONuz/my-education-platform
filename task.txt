@@ -1,0 +1,15 @@
+---------------------------------- TASKS ------------------------------------
+1. Main page:
+    * "welcome to admin" degan chiroyli cardcha yasab qo'yish
+    * Saytga kiruvchilar Grafigi
+    * Video darslarning sotilish Grafigi
+    * Mashxur kurslar (4)
+    * Oxirigi qo'shilgan guruhlar (4)
+    * Umumiy kurslar soni, o'quvchilar soni, oylik tushumlar, guruhlar soni
+    * oxirigi yuborilgan xabarlar
+    * eng yaxshi o'qituvchilar (4)
+2. Crypto page 
+    * oylik tushumlar grafigi 
+    * umumiy balans
+    * oylik tushumlarning jadvali
+    * 
