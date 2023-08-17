@@ -45,7 +45,7 @@ import AvatarImg from '/images/card/avatar.png';
   </div>
 </template>
 
-<style scoped>
+<style>
 .box-container{
   width: calc(100% / 3 - 10px);
 }

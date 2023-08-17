@@ -6,10 +6,6 @@ const props = defineProps({
     text: String,
     num: String
 });
-const arr = ref(null);
-onMounted(() => {
-    arr.value = props.num?.split(" ");
-}),
 </script>
 
 <template>
