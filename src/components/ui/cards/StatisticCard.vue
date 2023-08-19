@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <WrapBox class="course mb-4 cursor-default duration-200">
+    <WrapBox class="course cursor-default duration-200">
         <h3 class="text-sm text-[#a1a4b5] mb-2">{{ props.text }}</h3>
         <div class="flex items-center justify-between">
             <p class="text-[#191d33] text-3xl">{{ props.num }}</p>

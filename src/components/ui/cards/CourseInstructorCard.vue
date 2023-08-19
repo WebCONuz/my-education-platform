@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <WrapBox class="course flex items-center mb-4 cursor-default duration-200">
+    <WrapBox class="course flex items-center cursor-default duration-200">
         <img :src="props.image" alt="instructor" class="w-[50px] h-[50px] rounded-full">
         <div class="ml-4">
             <h3 class="text-[#191d33]">Nil Yeager</h3>

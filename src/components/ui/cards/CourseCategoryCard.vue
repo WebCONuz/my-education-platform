@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <WrapBox class="course flex items-center mb-4 cursor-default duration-200">
+    <WrapBox class="course flex items-center cursor-default duration-200">
         <div 
             class="w-[50px] h-[50px] flex items-center justify-center text-white text-2xl rounded-md" 
             :style="'background-color:' + props.textColor" 
