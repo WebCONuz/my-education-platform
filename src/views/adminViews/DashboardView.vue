@@ -4,24 +4,12 @@ import CourseInstructorCard from '../../components/ui/cards/CourseInstructorCard
 import StatisticCard from '../../components/ui/cards/StatisticCard.vue';
 import PieChart from '../../components/ui/charts/PieChart.vue';
 import LineChart from '../../components/ui/charts/LineChart.vue';
-import WrapBoxTitle from '../../components/ui/titles/WrapBoxTitle.vue';
-
 import AvatarImg from '/images/card/avatar.png';
-
-// chart data
-const pieChartData = [
-    { year: 2010, count: 10 },
-    { year: 2011, count: 20 },
-    { year: 2012, count: 15 },
-    { year: 2013, count: 25 },
-    { year: 2014, count: 22 },
-    { year: 2015, count: 30 },
-    { year: 2016, count: 28 },
-];
+import { chartData } from "../../data";
 </script>
 
 <template>
-  <div>
+  <main class="dashboard">
     <Breadcrumb title="Dashboard" :data="['Dashboard', 'Main']" />
     <div class="grid grid-cols-3 gap-5 items-stretch">
       <!-- 1 -->
@@ -36,7 +24,7 @@ const pieChartData = [
       <div class="overflow-hidden">
         <WrapBoxTitle title="Users Chart" />
         <WrapBox class="w-full">
-          <PieChart :data="pieChartData" chartId="chart_users" />
+          <PieChart :data="chartData" chartId="chart_users" />
         </WrapBox>
       </div>
       <!-- 3 -->
@@ -51,7 +39,7 @@ const pieChartData = [
       <div class="col-span-2">
         <WrapBoxTitle title="Total Statistics" />
         <WrapBox class="w-full">
-          <LineChart :data="pieChartData" chartId="total_statistics"  />
+          <LineChart :data="chartData" chartId="total_statistics"  />
         </WrapBox>
       </div>
       <!-- 5 -->
@@ -63,7 +51,7 @@ const pieChartData = [
         <StatisticCard class="mb-0" color="#58BAAB" text="Earning Points" icon="bx bx-up-arrow-circle" num="8" />
       </div>      
     </div>
-  </div>
+  </main>
 </template>
 
 <style></style>

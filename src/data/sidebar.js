@@ -4,7 +4,6 @@ export const menu = [
       title: 'Dashboard', 
       list: [
         {name: 'Main page', url: '/admin/main'},
-        {name: 'Crypto', url: '/admin/crypto'},
         {name: 'Blog', url: '/admin/blog'},
         {name: 'Tasks', url: '/admin/task'}
       ]
