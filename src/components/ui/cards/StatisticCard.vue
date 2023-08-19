@@ -1,5 +1,4 @@
 <script setup>
-import WrapBox from '../WrapBox.vue';
 const props = defineProps({
     color: String,
     icon: String,

@@ -1,6 +1,5 @@
 <script setup>
 import UsersTable from '../../components/Table/UsersTable.vue';
-import Breadcrumb from '../../components/ui/Breadcrumb.vue';
 import StatisticCard from '../../components/ui/cards/StatisticCard.vue';
 
 const users = [
@@ -75,16 +74,16 @@ const admins = [
     <Breadcrumb title="Dashboard" :data="['Dashboard', 'Contact', 'Users']" />
     <div class="flex justify-between mt-4">
       <div class="box-container">
-        <StatisticCard color="#fec801" text="Courses In Progress" icon="bx bx-bar-chart-square" num="32" />
+        <StatisticCard color="#fec801" text="All students" icon="bx bx-bar-chart-square" num="561" />
       </div>
       <div class="box-container">
-        <StatisticCard color="#019FF8" text="Completed Courses" icon="bx bx-badge-check" num="14" />
+        <StatisticCard color="#019FF8" text="Pending Users" icon="bx bxs-hourglass" num="83" /> <i class=''></i>
       </div>
       <div class="box-container">
-        <StatisticCard color="#58BAAB" text="Earning Points" icon="bx bx-up-arrow-circle" num="8" />
+        <StatisticCard color="#58BAAB" text="Paid Users" icon="bx bx-badge-check" num="124" />
       </div>
     </div>
-    <UsersTable :admins="admins" :users="users" />
+    <UsersTable :users="users" />
   </div>
 </template>
 

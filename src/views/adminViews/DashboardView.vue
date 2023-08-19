@@ -1,9 +1,7 @@
 <script setup>
-import Breadcrumb from '../../components/ui/Breadcrumb.vue';
 import CourseCategoryCard from '../../components/ui/cards/CourseCategoryCard.vue';
 import CourseInstructorCard from '../../components/ui/cards/CourseInstructorCard.vue';
 import StatisticCard from '../../components/ui/cards/StatisticCard.vue';
-import WrapBox from '../../components/ui/WrapBox.vue';
 
 import AvatarImg from '/images/card/avatar.png';
 </script>
@@ -50,8 +48,4 @@ import AvatarImg from '/images/card/avatar.png';
   </div>
 </template>
 
-<style>
-.box-container{
-  width: calc(100% / 3 - 10px);
-}
-</style>
+<style></style>

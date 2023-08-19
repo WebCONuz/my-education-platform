@@ -1,6 +1,4 @@
 <script setup>
-import WrapBox from '../WrapBox.vue';
-import LinkBtn from '../buttons/LinkBtn.vue';
 const props = defineProps({
     bgColor: String,
     textColor: String

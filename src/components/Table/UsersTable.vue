@@ -1,11 +1,9 @@
 <script setup>
 import { Pagination } from 'flowbite-vue'
 import { ref } from 'vue'
-import SwitchBtn from '../ui/buttons/SwitchBtn.vue';
 
 const currentPage = ref(1)
 const props = defineProps({
-    admins: Array,
     users: Array
 })
 </script>
