@@ -6,7 +6,6 @@ import PostCard from '../../components/ui/cards/PostCard.vue';
 </script>
 
 <template>
-    <!-- <WrapBoxTitle title="Popular courses" link="#" /> -->
     <main class="blog">
         <Breadcrumb title="Blog" :data="['Dashboard', 'Blog']" />
         <div class="grid grid-cols-3 gap-4">

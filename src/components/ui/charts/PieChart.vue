@@ -27,7 +27,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <canvas :id="props.chartId"></canvas>
+    <canvas :id="props.chartId" class="border border-red-500" sytle="width: 50%;"></canvas>
 </template>
 
 <style></style>

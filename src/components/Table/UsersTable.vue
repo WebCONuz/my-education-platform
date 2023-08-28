@@ -1,6 +1,6 @@
 <script setup>
 import { Pagination } from 'flowbite-vue'
-import { ref } from 'vue'
+import { ref, defineProps } from 'vue'
 
 const currentPage = ref(1)
 const props = defineProps({

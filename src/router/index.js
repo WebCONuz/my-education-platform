@@ -30,6 +30,10 @@ const router = createRouter({
           component: () => import("../views/adminViews/BlogView.vue"),
         },
         {
+          path: "task",
+          component: () => import("../views/adminViews/TasksView.vue"),
+        },
+        {
           path: "users",
           component: () => import("../views/adminViews/AllUsersView.vue"),
         },

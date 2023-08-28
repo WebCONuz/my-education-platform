@@ -13,7 +13,7 @@ import { chartData } from "../../data";
     <Breadcrumb title="Dashboard" :data="['Dashboard', 'Main']" />
     <div class="grid grid-cols-3 gap-5 items-stretch">
       <!-- 1 -->
-      <div class="flex flex-col justify-between">
+      <div class="flex flex-col">
         <WrapBoxTitle title="Popular courses" link="#" />
         <CourseCategoryCard class="mb-4" bgColor="#FEF5D4" textColor="#fec801" />
         <CourseCategoryCard class="mb-4" bgColor="#E2F3FC" textColor="#019FF8" />
@@ -23,12 +23,12 @@ import { chartData } from "../../data";
       <!-- 2 -->
       <div class="overflow-hidden">
         <WrapBoxTitle title="Users Chart" />
-        <WrapBox class="w-full">
+        <WrapBox class="w-full flex justify-center">
           <PieChart :data="chartData" chartId="chart_users" />
         </WrapBox>
       </div>
       <!-- 3 -->
-      <div class="flex flex-col justify-between">
+      <div class="flex flex-col">
         <WrapBoxTitle title="Popular mentors" link="#" />
         <CourseInstructorCard class="mb-4" :image="AvatarImg" />
         <CourseInstructorCard class="mb-4" :image="AvatarImg" />
@@ -43,11 +43,11 @@ import { chartData } from "../../data";
         </WrapBox>
       </div>
       <!-- 5 -->
-      <div class="flex flex-col justify-between">
+      <div class="flex flex-col">
         <WrapBoxTitle title="Popular courses" link="#" />
         <StatisticCard class="mb-4" color="#fec801" text="Courses In Progress" icon="bx bx-bar-chart-square" num="32" />
         <StatisticCard class="mb-4" color="#019FF8" text="Completed Courses" icon="bx bx-badge-check" num="14" />
-        <StatisticCard class="mb-4" color="#F2426D" text="Watching Time" icon="bx bx-video" num="214h 21m" />
+        <StatisticCard class="mb-4" color="#F2426D" text="Watching Time" icon="bx bx-video" num="214h" />
         <StatisticCard class="mb-0" color="#58BAAB" text="Earning Points" icon="bx bx-up-arrow-circle" num="8" />
       </div>      
     </div>

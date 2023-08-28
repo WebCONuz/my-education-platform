@@ -1,4 +1,6 @@
 <script setup>
+import { defineProps } from 'vue';
+
 const props = defineProps({
     url: String,
     text: String

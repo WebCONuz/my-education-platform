@@ -27,7 +27,7 @@ const admins = [
 </script>
 
 <template>
-  <div>
+  <main class="all_users">
     <Breadcrumb title="Users" :data="['Dashboard', 'Contact', 'Users']" />
     <div class="flex justify-between mt-4 mb-4">
       <div class="box-container">
@@ -41,7 +41,7 @@ const admins = [
       </div>
     </div>
     <UsersTable :users="users" />
-  </div>
+  </main>
 </template>
 
 <style></style>
