@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue';
-const switchOn = ref(false)
+const props = defineProps({
+    switch: Boolean
+})
+const switchOn = ref(props.switch);
 function onToSwitch(){
     switchOn.value = !switchOn.value
 }

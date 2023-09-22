@@ -6,7 +6,8 @@ export const users = [
       age: 28, 
       role: 'author', 
       avatar: "/images/users/user1.jpg", 
-      phone: "+99 899 550 50 50"
+      phone: "+99 899 550 50 50",
+      status: true
     },
     {
       id: 2,
@@ -15,7 +16,8 @@ export const users = [
       age: 25, 
       role: 'user', 
       avatar: "/images/users/user2.jpg", 
-      phone: "+99 899 550 50 50"
+      phone: "+99 899 550 50 50",
+      status: false
     },
     {
       id: 3,
@@ -24,7 +26,8 @@ export const users = [
       age: 32, 
       role: 'author', 
       avatar: "/images/users/user3.jpg", 
-      phone: "+99 899 550 50 50"
+      phone: "+99 899 550 50 50",
+      status: false
     },
     {
       id: 4,
@@ -33,6 +36,19 @@ export const users = [
       age: 30, 
       role: 'user', 
       avatar: "/images/users/user4.jpg", 
-      phone: "+99 899 550 50 50"
+      phone: "+99 899 550 50 50",
+      status: true
     }
+];
+
+export const headers = [
+  {title: 'ID', value: 'id'},
+  {title: 'Avatar', value: 'avatar'},
+  {title: 'Name', value: 'name'},
+  {title: 'Age', value: 'age'},
+  {title: 'Phone', value: 'phone'},
+  {title: 'Role', value: 'role'},
+  {title: 'Job', value: 'job'},
+  {title: 'Status', value: 'status'},
+  {title: 'Actions', value: 'actions'},
 ]
