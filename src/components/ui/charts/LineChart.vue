@@ -1,5 +1,5 @@
 <script setup>
-import { onMounted, defineProps } from 'vue';
+import { onMounted } from 'vue';
 import Chart from 'chart.js/auto';
 
 const props = defineProps({

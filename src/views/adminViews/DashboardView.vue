@@ -23,7 +23,7 @@ import { chartData } from "../../data";
       <!-- 2 -->
       <div class="overflow-hidden">
         <WrapBoxTitle title="Users Chart" />
-        <WrapBox class="w-full flex justify-center">
+        <WrapBox class="w-full h-full flex justify-center">
           <PieChart :data="chartData" chartId="chart_users" />
         </WrapBox>
       </div>

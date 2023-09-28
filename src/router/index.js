@@ -18,15 +18,17 @@ const router = createRouter({
       ],
     },
     {
-      path: "/admin/",
+      path: "/admin",
       component: () => import("../layouts/AdminLayout.vue"),
       children: [
         {
           path: "main",
+          name: 'admin-main',
           component: () => import("../views/adminViews/DashboardView.vue"),
         },
         {
           path: "blog",
+          name: 'admin-blog',
           component: () => import("../views/adminViews/BlogView.vue"),
         },
         {

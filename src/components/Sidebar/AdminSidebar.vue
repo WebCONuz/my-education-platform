@@ -1,6 +1,11 @@
 <script setup>
+import { ref } from 'vue';
 import AsideAccordion from "../ui/AsideAccordion.vue";
 import { menu } from "../../data";
+const openTab = ref(false)
+function activeTab(){
+  openTab.value = false
+}
 </script>
 
 <template>

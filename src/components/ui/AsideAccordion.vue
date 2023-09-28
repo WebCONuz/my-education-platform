@@ -1,18 +1,20 @@
 <script setup>
-import { ref, defineProps } from 'vue';
+import { ref } from 'vue';
 
 const props = defineProps({
     data: Object
 })
 
 const open = ref(false);
-const openAccordion = () => {
+const openAccordion = (e) => {
+    console.log(e.target);
   open.value = !open.value
 }
 </script>
 
 <template>
-    <div v-if="props.data?.list" class="pt-2">
+    <div v-if="props.data?.list" class="pt-2">      
+        <!-- title   -->
         <div 
             class="px-4 py-1 mb-1 w-full flex items-center justify-between cursor-pointer hover:bg-[#343A4C] hover:text-white duration-200" 
             :class="open ? 'text-white' : 'text-[#959EBB]'" 
@@ -24,6 +26,7 @@ const openAccordion = () => {
             </div>
             <i class='bx bx-chevron-down text-base duration-500' :class="open ? 'rotate-180' : 'rotate-0'"></i>
         </div>
+        <!-- accordion -->
         <ul class="px-4 overflow-hidden transition-all duration-500" :class="open ? 'max-h-[400px]' : 'max-h-0'">
             <li 
                 class="py-1 pl-4 hover:bg-[#343A4C] text-[#959EBB] hover:text-white duration-200" 

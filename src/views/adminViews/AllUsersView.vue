@@ -5,7 +5,6 @@ import MainTable from '../../components/Table/MainTable.vue';
 import StatisticCard from '../../components/ui/cards/StatisticCard.vue';
 import { users, headers } from "../../data";
 import MainTableTitle from '../../components/ui/titles/MainTableTitle.vue'
-
 const currentPage = ref(1)
 </script>
 
@@ -30,7 +29,7 @@ const currentPage = ref(1)
     <MainTableTitle class="mt-2 mb-4" title="users" />
     
     <!-- users table -->
-    <MainTable :users="users" :headers="headers">
+    <MainTable :data="users" :headers="headers">
       <template #td_avatar="{item}">
         <img :src="item.avatar" alt="avatar" class="w-11 h-11 rounded-full object-cover">
       </template>
