@@ -3,7 +3,7 @@ export const menu = [
       icon: 'bx bx-home',
       title: 'Dashboard', 
       list: [
-        {name: 'Main page', url: '/admin/main'},
+        {name: 'Main page', url: '/admin'},
         {name: 'Blog', url: '/admin/blog'},
         {name: 'Tasks', url: '/admin/task'}
       ]
