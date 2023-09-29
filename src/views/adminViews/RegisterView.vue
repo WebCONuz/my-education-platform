@@ -12,6 +12,5 @@ import RegisterForm from '../../components/Form/RegisterForm.vue';
 <style scoped>
 .registration{
     min-height: calc(100vh - 110px);
-    border: 1px solid red;
 }
 </style>

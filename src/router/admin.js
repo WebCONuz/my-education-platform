@@ -32,5 +32,10 @@ export const adminRoutes = {
         name: 'admin-register',
         component: () => import("../views/adminViews/RegisterView.vue"),
       },
+      {
+        path: "login",
+        name: 'admin-login',
+        component: () => import("../views/adminViews/LoginView.vue"),
+      },
     ],
 };
