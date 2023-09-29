@@ -10,3 +10,6 @@
 .box-container{
     width: calc(100% / 3 - 10px);
 }
+.box-shadow{
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}

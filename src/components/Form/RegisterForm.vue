@@ -2,9 +2,9 @@
 </script>
 
 <template>
-    <div class="p-8 rounded-lg">
+    <div class="p-8 rounded-lg box-shadow">
         <div class="title py-3 px-4 bg-blue-100 flex items-center mb-4 rounded-lg">
-            <i class='bx bxs-user-circle text-[40px] text-gray-600 mr-3'></i>
+            <i class='bx bx-lock-open-alt text-[40px] text-gray-600 mr-3'></i>
             <div class="text-gray-700">
                 <h1 class="text-xl font-semibold mb-1">Register</h1>
                 <p class="text-sm">Please enter your data to register.</p>

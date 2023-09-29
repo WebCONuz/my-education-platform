@@ -36,6 +36,15 @@ export const menu = [
       ]
     },
     {
+      icon: 'bx bx-shield-alt-2',
+      title: 'Admins', 
+      list: [
+        {name: 'All admins', url: '/admin/all'},
+        {name: 'Profile admin', url: '/admin/admin-profile'},
+        {name: 'Create Admin', url: '/admin/create_admin'}
+      ]
+    },
+    {
       icon: 'bx bx-notepad',
       title: 'Blog', 
       list: [
