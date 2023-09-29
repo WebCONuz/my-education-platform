@@ -11,6 +11,12 @@ import { chartData } from "../../data";
 <template>
   <main class="dashboard">
     <Breadcrumb title="Dashboard" :data="['Dashboard', 'Main']" />
+    <div class="grid grid-cols-4 gap-x-5 mb-4">
+        <StatisticCard color="#5A8DEE" text="Active Users" icon="bx bxs-user-plus" num="67" /> 
+        <StatisticCard color="#5A8DEE" text="Admins" icon="bx bx-shield-quarter" num="5" />
+        <StatisticCard color="#5A8DEE" text="Groups" icon="bx bxs-group" num="10" />
+        <StatisticCard color="#5A8DEE" text="Teachers" icon="bx bxs-award" num="3" />
+    </div>
     <div class="grid grid-cols-3 gap-5 items-stretch">
       <!-- 1 -->
       <div class="flex flex-col">

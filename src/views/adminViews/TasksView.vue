@@ -14,6 +14,11 @@ const currentPage = ref(1)
         <MainTableTitle class="mt-2 mb-4" title="Task for 22.09.2023" />
         <!-- tasks table -->
         <MainTable :data="tasks" :headers="tableHeader">
+            <template #td_name="{item}">
+                <router-link :to="'/admin/task/' + item.id" class="text-blue-500 hover:text-blue-700 duration-100" title="view">
+                    {{ item.name }}
+                </router-link>
+            </template>
             <template #td_status="{item}">
                 <span 
                     class="inline-block capitalize py-1 px-2 rounded-[20px] text-xs" 

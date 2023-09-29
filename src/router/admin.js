@@ -37,5 +37,10 @@ export const adminRoutes = {
         name: 'admin-login',
         component: () => import("../views/adminViews/LoginView.vue"),
       },
+      {
+        path: "task/:id",
+        name: 'one-task',
+        component: () => import("../views/adminViews/OneTaskView.vue"),
+      },
     ],
 };

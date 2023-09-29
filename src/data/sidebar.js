@@ -9,13 +9,23 @@ export const menu = [
       ]
     },
     {
-      icon: 'bx bx-store',
-      title: 'Ecommerce', 
+      icon: 'bx bx-shield-quarter',
+      title: 'Admins', 
       list: [
-        {name: 'Lessons', url: '/admin/lessons'},
-        {name: 'Orders', url: '/admin/orders'},
-        {name: 'Customers', url: '/admin/customers'},
-        {name: 'Add Product', url: '/admin/add_product'},
+        {name: 'All admins', url: '/admin/all'},
+        {name: 'Profile admin', url: '/admin/admin-profile'},
+        {name: 'Create Admin', url: '/admin/create_admin'}
+      ]
+    },
+    {
+      icon: 'bx bx-file',
+      title: 'Courses', 
+      list: [
+        {name: 'List View', url: '/admin/courses/list'},
+        {name: 'Grid View', url: '/admin/courses/grid'},
+        {name: 'Category', url: '/admin/courses/caregory'},
+        {name: 'Course Details', url: '/admin/courses/overview'},
+        {name: 'Create Course', url: '/admin/courses/create'},
       ]
     },
     {
@@ -27,8 +37,18 @@ export const menu = [
       ]
     },
     {
+      icon: 'bx bxs-graduation',
+      title: 'Instructors', 
+      list: [
+        {name: 'List View', url: '/admin/instructor/list'},
+        {name: 'Grid View', url: '/admin/instructor/grid'},
+        {name: 'Instructor Details', url: '/admin/instructor/overview'},
+        {name: 'Create Course', url: '/admin/instructor/create'},
+      ]
+    },
+    {
       icon: 'bx bxs-user-detail',
-      title: 'Contacts', 
+      title: 'Customers', 
       list: [
         {name: 'Users', url: '/admin/users'},
         {name: 'Profile', url: '/admin/profile'},
@@ -36,22 +56,23 @@ export const menu = [
       ]
     },
     {
-      icon: 'bx bx-shield-alt-2',
-      title: 'Admins', 
+      icon: 'bx bx-group',
+      title: 'Groups', 
       list: [
-        {name: 'All admins', url: '/admin/all'},
-        {name: 'Profile admin', url: '/admin/admin-profile'},
-        {name: 'Create Admin', url: '/admin/create_admin'}
+        {name: 'List View', url: '/admin/groups/list'},
+        {name: 'Grid View', url: '/admin/groups/grid'},
+        {name: 'Group Deatils', url: '/admin/groups/details'},
+        {name: 'Create Group', url: '/admin/groups/create'}
       ]
     },
     {
-      icon: 'bx bx-notepad',
-      title: 'Blog', 
+      icon: 'bx bx-book-open',
+      title: 'Articles', 
       list: [
-        {name: 'Blog List', url: '/admin/blog'},
-        {name: 'Blog Categories', url: '/admin/blog_category'},
-        {name: 'Blog Details', url: '/admin/blog_details'},
-        {name: 'Create Blog', url: '/admin/create_blog'}
+        {name: 'All Articles', url: '/admin/articles/all'},
+        {name: 'Category', url: '/admin/articles/caregory'},
+        {name: 'Article Details', url: '/admin/articles/overview'},
+        {name: 'Create Articles', url: '/admin/articles/create'},
       ]
     },
     {
@@ -71,8 +92,10 @@ export const menu = [
       list: [
         {name: 'FAQs', url: '/admin/faq'},
         {name: 'Pricing', url: '/admin/pricing'},
+        {name: 'Privacy Policy', url: '/admin/privacy'},
         {name: 'Error 404', url: '/admin/not_found'},
-        {name: 'Error 500', url: '/admin/internal_server_error'}
+        {name: 'Error 500', url: '/admin/internal_server_error'},
+        {name: 'Offline Page', url: '/admin/offline'}
       ]
     },
     {
