@@ -8,6 +8,11 @@ export const adminRoutes = {
         component: () => import("../views/adminViews/DashboardView.vue"),
       },
       {
+        path: "courses/list",
+        name: 'courses-list',
+        component: () => import("../views/adminViews/courses/CourseList.vue"),
+      },
+      {
         path: "blog",
         name: 'admin-blog',
         component: () => import("../views/adminViews/BlogView.vue"),
