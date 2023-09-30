@@ -23,7 +23,7 @@ export const menu = [
       list: [
         {name: 'List View', url: '/admin/courses/list'},
         {name: 'Grid View', url: '/admin/courses/grid'},
-        {name: 'Category', url: '/admin/courses/caregory'},
+        {name: 'Category', url: '/admin/courses/category'},
         {name: 'Course Details', url: '/admin/courses/overview'},
         {name: 'Create Course', url: '/admin/courses/create'},
       ]
