@@ -13,6 +13,11 @@ export const adminRoutes = {
         component: () => import("../views/adminViews/courses/CourseList.vue"),
       },
       {
+        path: "courses/grid",
+        name: 'courses-grid',
+        component: () => import("../views/adminViews/courses/CourseGrid.vue"),
+      },
+      {
         path: "blog",
         name: 'admin-blog',
         component: () => import("../views/adminViews/BlogView.vue"),

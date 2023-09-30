@@ -16,17 +16,23 @@ const currentPage = ref(1)
     
     <!-- users table -->
     <MainTable :data="courses" :headers="course_headers">
-      <template #td_checked="{item}">
+      <template #td_checked>
         <input type="checkbox" class="w-6 h-6 rounded-md border-gray-300 outline-none ring-0 focus:ring-0">
       </template>
+      <template #td_category="{item}">
+        <div class="min-w-[150px]">{{ item.category }}</div>
+      </template>
       <template #td_name="{item}">
-        <div class="flex items-center">
-            <img :src="item.image" alt="avatar" class="w-5 mr-3">
+        <div class="flex items-center min-w-[200px]">
+            <img :src="item.image" alt="course image" class="w-5 mr-3">
             <router-link :to="'/courses/' + item.id" class="text-blue-500">{{ item.name }}</router-link>
         </div>
       </template>
+      <template #td_instructor="{item}">
+        <div class="min-w-[150px]">{{ item.instructor }}</div>
+      </template>
       <template #td_raiting="{item}">
-        <div class="flex items-center">
+        <div class="flex items-center   ">
             <i class='bx bxs-star text-lg text-yellow-300 mr-1'></i>
             <span>{{ item.raiting }}</span>
         </div>
