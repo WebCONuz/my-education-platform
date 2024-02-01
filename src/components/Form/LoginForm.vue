@@ -1,4 +1,10 @@
 <script setup>
+import { Form, Field } from 'vee-validate';
+import { login_schema } from '../../models/loginSchema';
+
+function onSubmit(){
+    console.log('Form yuborildi...');
+}
 </script>
 
 <template>
@@ -10,27 +16,28 @@
                 <p class="text-sm">Please enter your data to login.</p>
             </div>
         </div>
-        <form action="#" class="block w-full">
+        <Form action="#" class="block w-full" @submit="onSubmit" :validation-schema="login_schema" v-slot="{ errors }" >
             <div class="form-item mb-3">
-                <label for="userEmail" class="text-sm text-gray-700 font-semibold">Username</label>
-                <input 
+                <label class="text-sm text-gray-700 font-semibold">Username</label>
+                <Field 
+                    name="userEmail" 
                     type="email" 
-                    id="userEmail" 
-                    class="my-1 outline-none border border-gray-400 ring-0 rounded px-4 py-2 block w-full"
+                    class="my-1 outline-none border border-gray-400 ring-0 rounded px-4 py-2 block w-full" 
+                    :class="{ 'is-invalid': errors.userEmail }" 
                     placeholder="example@gmail.com"
-                    
                 />
-                <p class="text-xs text-gray-500">Your unique username to app</p>
+                <p class="text-xs text-red-600" v-if="errors.userEmail">{{ errors.userEmail }}</p>
             </div>
             <div class="form-item mb-5">
-                <label for="userPassword" class="text-sm text-gray-700 font-semibold">Password</label>
-                <input 
+                <label class="text-sm text-gray-700 font-semibold">Password</label>
+                <Field 
+                    name="userPassword" 
                     type="password" 
-                    id="userPassword" 
-                    class="my-1 outline-none border border-gray-400 ring-0 rounded px-4 py-2 block w-full"
+                    class="my-1 outline-none border border-gray-400 ring-0 rounded px-4 py-2 block w-full" 
+                    :class="{ 'is-invalid': errors.userPassword }" 
                     placeholder="******"
                 />
-                <p class="text-xs text-gray-500">Your strong password</p>
+                <p class="text-xs text-red-600" v-if="errors.userPassword">{{ errors.userPassword }}</p>
             </div>
             <div class="flex justify-between items-center">
                 <div>
@@ -39,7 +46,7 @@
                 </div>
                 <router-link to="/admin/register" class="text-blue-500">Register now</router-link>
             </div>
-        </form>
+        </Form>
     </div>
 </template>
 

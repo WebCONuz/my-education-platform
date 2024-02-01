@@ -13,14 +13,14 @@ export const adminRoutes = {
         component: () => import("../views/adminViews/courses/CourseList.vue"),
       },
       {
-        path: "courses/category",
-        name: 'courses-list',
-        component: () => import("../views/adminViews/courses/CourseCategory.vue"),
-      },
-      {
         path: "courses/grid",
         name: 'courses-grid',
         component: () => import("../views/adminViews/courses/CourseGrid.vue"),
+      },
+      {
+        path: "courses/category",
+        name: 'courses-category',
+        component: () => import("../views/adminViews/courses/CourseCategory.vue"),
       },
       {
         path: "blog",

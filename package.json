@@ -13,8 +13,10 @@
     "flowbite": "^1.7.0",
     "flowbite-vue": "^0.0.16",
     "pinia": "^2.0.36",
+    "vee-validate": "^4.11.7",
     "vue": "^3.3.2",
-    "vue-router": "^4.2.0"
+    "vue-router": "^4.2.0",
+    "yup": "^1.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
