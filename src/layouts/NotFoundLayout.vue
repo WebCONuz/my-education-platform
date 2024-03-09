@@ -18,8 +18,10 @@
           Sorry, we can't find that page. You'll find lots to explore on the
           home page.
         </p>
-        <router-link to="/" class="py-3 px-8 bg-color text-white rounded-md"
-          >Back to Homepage</router-link
+        <router-link
+          to="/admin"
+          class="py-3 px-8 bg-color text-gray-500 border-2 border-gray-500 rounded-md"
+          >Back to Dashboard</router-link
         >
       </div>
     </div>
